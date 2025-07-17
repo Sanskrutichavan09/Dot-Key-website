@@ -14,6 +14,7 @@
       <div class="logo">
         <img src="https://cdn-icons-png.flaticon.com/512/6688/6688704.png" alt="logo" />
         <span class="logo-text">Dot & Key</span>
+          <button class="nav-toggle" id="navToggle">☰</button>
       </div>
       <nav>
         <ul>
@@ -109,6 +110,15 @@
       i = (i + 1) % images.length;
       slider.src = images[i];
     }, 3000);
+
+
+    
+  const navToggle = document.getElementById('navToggle');
+  const navList = document.querySelector('nav ul');
+
+  navToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
   </script>
 </body>
 </html>
