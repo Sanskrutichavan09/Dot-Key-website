@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eShop - Dot&Key</title>
+  <link rel="stylesheet" href="style.css" />
+ 
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container head-container">
+      <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/6688/6688704.png" alt="logo" />
+        <span class="logo-text">Dot & Key</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li>
+            <a href="#">Products</a>
+            <ul class="dropdown">
+              <li><a href="skyblue.html">Damage Skin Barrier/Dryness</a></li>
+              <li><a href="Yellow.html">Dullness</a></li>
+              <li><a href="Ageing.html">Makeup + skincare</a></li>
+              <li><a href="Darksport.html">Dark Spots</a></li>
+              <li><a href="Excessoil.html">Excess oil</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container contact-container">
+      <h2>Contact Us</h2>
+      <p>Have questions or feedback? We'd love to hear from you!</p>
+      <form action="#" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 eShop. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Image Slider Script (if you add <img id="slider"> somewhere) -->
+  <script>
+    const slider = document.getElementById("slider");
+    if (slider) {
+      const images = [
+        "https://www.dotandkey.com/cdn/shop/collections/By-catagory-7.png?v=1740649969",
+        "https://www.dotandkey.com/cdn/shop/collections/By-catagory-3_f79fa38c-e530-43b6-9ff9-b154af6ae8b7.webp?v=1750929920",
+        "https://www.dotandkey.com/cdn/shop/collections/By-catagory-6.png?v=1740649993",
+        "https://www.dotandkey.com/cdn/shop/collections/By-catagory-11.png?v=1740649898",
+        "https://www.dotandkey.com/cdn/shop/collections/straw_desk.jpg?v=1751435089"
+      ];
+      let i = 0;
+      setInterval(() => {
+        i = (i + 1) % images.length;
+        slider.src = images[i];
+      }, 3000);
+    }
+  </script>
+</body>
+</html>

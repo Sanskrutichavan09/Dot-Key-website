@@ -1,4 +1,4 @@
-  * {
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -6,7 +6,7 @@
 
     body {
       font-family: "Segoe UI", sans-serif;
-      background: linear-gradient(to right, #ffdede, #ffe9e9);
+      background-color:#fb89a5;
       color: #222;
       line-height: 1.6;
     }
@@ -25,7 +25,7 @@
     header {
       position: sticky;
       top: 0;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color:#f79d91;
       backdrop-filter: blur(10px);
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       z-index: 999;
@@ -47,26 +47,23 @@
     .logo img {
       height: 65px;
     }
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:#cd1929; /* sky blue */
+  animation: moveLogo 2s ease-in-out infinite;
+}
 
-    .logo-text {
-      font-size: 1.5rem;
-      font-weight: bold;
-      animation: logoColorChange 12s ease-in-out infinite;
-      transition: transform 0.5s ease;
-    }
-
-    @keyframes logoColorChange {
-      0% { color: #ff69b4; transform: translateY(0px); }
-      25% { color: #87ceeb; transform: translateY(-2px); }
-      50% { color: #f1e61a; transform: translateY(0px); }
-      75% { color: #ff0000; transform: translateY(2px); }
-      100% { color: #ff69b4; transform: translateY(0px); }
-    }
+@keyframes moveLogo {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-2px); }
+}
 
     nav ul {
       list-style: none;
       display: flex;
       position: relative;
+      color: #cd1929;
     }
 
     nav ul li {
@@ -141,21 +138,23 @@
 
     .feature-products {
       padding: 60px 0;
-      background-color: #fff9f9;
+      background-color: transparent; 
       text-align: center;
     }
-
-    .sky-blue { color: skyblue; }
+    button{
+        border-radius: 25%;
+        border: 2px solid rgb(225, 235, 135);
+        height: 50px;
+        width: 40px;
+        margin: 2px;
+    }
+ .sky-blue { color: skyblue; }
     .yellow { color: #fcf006; }
     .Red { color: #f11a21; }
      .pink { color: #f11adb; }
      .green { color: #43f910; }
-
-    .products-card.sky-blue:hover { box-shadow: 0 6px 24px rgb(3, 216, 244); }
-    .products-card.yellow:hover { box-shadow: 0 6px 24px rgb(240, 253, 4); }
-    .products-card.Red:hover { box-shadow: 0 6px 24px rgb(253, 4, 37); }
-    .products-card.Green:hover { box-shadow: 0 6px 24px rgb(25, 253, 4); }
-    .products-card.pink:hover { box-shadow: 0 6px 24px rgb(243, 143, 229); }
+    .products-card.sky-blue:hover { box-shadow: 0 6px 24px rgb(167, 240, 248); }
+    
 
     .feature-products h2 {
       font-size: 2.2rem;
@@ -200,7 +199,7 @@
     }
 
     footer {
-      background-color: #ffdbdb;
+      background-color: #f79d91; 
       padding: 25px 0;
       text-align: center;
       color: #333;
@@ -216,75 +215,3 @@
         width: 90%;
       }
     }
-
-    /* contact */
-    /* Contact Section */
-.contact-section {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.contact-container {
-  max-width: 700px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-.contact-section h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.contact-section p {
-  font-size: 16px;
-  margin-bottom: 30px;
-  color: #666;
-}
-
-.contact-form .form-group {
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.contact-form label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: #444;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: border-color 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #87ceeb;
-  outline: none;
-}
-
-.submit-btn {
-  background-color: #87ceeb;
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.submit-btn:hover {
-  background-color: #5dbde0;
-}
