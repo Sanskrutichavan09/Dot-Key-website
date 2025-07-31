@@ -5,42 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>eShop - Dot&Key</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
   <!-- Header -->
   <header>
-    <div class="container head-container">
-      <div class="logo">
-        <img src="https://cdn-icons-png.flaticon.com/512/6688/6688704.png" alt="logo" />
-        <span class="logo-text">Dot & Key</span>
-          <button class="nav-toggle" id="navToggle">☰</button>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li>
-            <a href="#">Products</a>
-            <ul class="dropdown">
-              <li><a href="skyblue.html">Damage Skin Barrier/Dryness</a></li>
-              <li><a href="Yellow.html">Dullness</a></li>
-              <li><a href="Ageing.html">Makeup + skincare</a></li>
-              <li><a href="Darksport.html">Dark Spots</a></li>
-              <li><a href="Excessoil.html">Excess oil</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <div class="container head-container">
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/6688/6688704.png" alt="logo" />
+      <span class="logo-text">Dot & Key</span>
+      <button class="nav-toggle" id="navToggle">☰</button>
     </div>
-  </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li>
+          <a href="Products.html">Products</a>
+          <ul class="dropdown">
+            <li><a href="skyblue.html">Damage Skin Barrier/Dryness</a></li>
+            <li><a href="Yellow.html">Dullness</a></li>
+            <li><a href="Ageing.html">Makeup + skincare</a></li>
+            <li><a href="Darksport.html">Dark Spots</a></li>
+            <li><a href="Excessoil.html">Excess oil</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Add Right Side Icons Here -->
+    <div class="header-icons">
+      <!-- Search -->
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+
+      <!-- Track Order -->
+      <a href="#" title="Track Order"><i class="fas fa-truck"></i></a>
+
+      <!-- Cart -->
+      <a href="#" title="Cart"><i class="fas fa-shopping-bag"></i></a>
+
+      <!-- Login -->
+      <a href="#" title="Login"><i class="fas fa-user"></i></a>
+    </div>
+  </div>
+</header>
+
 
   <!-- Hero Section -->
   <section class="Hero">
     <img
       id="slider"
-      src="https://www.dotandkey.com/cdn/shop/collections/combo-Desktop.jpg?v=1752607905"
+      src="images/Home/home1.webp"
       alt="Hero Image" />
   </section>
 
@@ -50,14 +71,14 @@
       <h2>Featured Products</h2>
       <div class="products-row">
         <a href="skyblue.html"><div class="products-card sky-blue">
-          <img src="https://www.dotandkey.com/cdn/shop/files/PO.jpg?v=1747392637&width=700" alt="clothes" />
+          <img src="images/Home/home2.webp" alt="clothes" />
           <h3 class="sky-blue">Hydrating Barrier Repair Duo</h3>
           <p style="background-color: rgb(0, 247, 247)">Normal, Dry, Sensitive & Combination Skin</p>
           <p>₹644</p>
         </div></a>
 
         <div class="products-card yellow">
-          <img src="https://www.dotandkey.com/cdn/shop/files/PO_c10903f0-fc8d-40a5-a437-7d3b2423307f.jpg?v=1747393463&width=700" alt="yellow" />
+          <img src="images/Home/home3.webp" alt="yellow" />
           <h3 class="yellow">All Skin Types</h3>
           <br />
           <p style="background-color: rgb(245, 245, 89)">Glow+ Protect Vitamin C Duo</p>
@@ -65,21 +86,21 @@
         </div>
 
         <div class="products-card Red">
-          <img src="https://www.dotandkey.com/cdn/shop/files/1_5843e4a6-af0f-48a8-a3fe-0e5eb33b10c8.jpg?v=1721906943&width=700" alt="red" />
+          <img src="images/Home/home4.webp" alt="red" />
           <h3 class="Red">All Skin Types</h3> <br>
           <p style="background-color: rgb(245, 89, 89)">Instant Dewy Skin Combo</p><br>
           <p>₹940</p>
         </div>
 
         <div class="products-card Green">
-          <img src="https://www.dotandkey.com/cdn/shop/files/1_6.jpg?v=1744262423&width=700" alt="green" />
+          <img src="images/Home/home5.webp" alt="green" />
           <h3 class="green">Oily, & Acne Prone Skin</h3>
           <p style="background-color: rgb(89, 245, 89)">Acne Control CTM Night Care Regime</p>
           <p>₹940</p>
         </div>
 
         <div class="products-card pink">
-          <img src="https://m.media-amazon.com/images/I/61uL96FDcTL._UF350,350_QL80_.jpg" alt="pink" />
+          <img src="images/Home/home6.jpg" alt="pink" />
           <h3 class="pink">Oily & Combination Skin</h3>
           <p style="background-color: rgb(241, 163, 202)">Watermelon Cooling Hyaluronic</p>
           <p>₹940</p>
@@ -99,11 +120,11 @@
   <script>
     const slider = document.getElementById("slider");
     const images = [
-      "https://www.dotandkey.com/cdn/shop/collections/By-catagory-7.png?v=1740649969",
-      "https://www.dotandkey.com/cdn/shop/collections/By-catagory-3_f79fa38c-e530-43b6-9ff9-b154af6ae8b7.webp?v=1750929920",
-      "https://www.dotandkey.com/cdn/shop/collections/By-catagory-6.png?v=1740649993",
-      "https://www.dotandkey.com/cdn/shop/collections/By-catagory-11.png?v=1740649898",
-      "https://www.dotandkey.com/cdn/shop/collections/straw_desk.jpg?v=1751435089"
+    "images/banner1.webp",
+      "images/banner2.webp",
+      "images/banner3.webp",
+      "images/banner4.webp",
+      "images/banner5.webp"
     ];
     let i = 0;
     setInterval(() => {

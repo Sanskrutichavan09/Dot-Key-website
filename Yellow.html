@@ -5,24 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>eShop - Dot&Key</title>
   <link rel="stylesheet" href="Yellow.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
   <!-- Header -->
   <header>
     <div class="container head-container">
+      <!-- Logo & Toggle -->
       <div class="logo">
         <img src="https://cdn-icons-png.flaticon.com/512/6688/6688704.png" alt="logo" />
         <span class="logo-text">Dot & Key</span>
         <button class="nav-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</button>
-
       </div>
+
+      <!-- Navigation -->
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="About.html">About</a></li>
           <li>
-            <a href="#">Products</a>
+            <a href="Products.html">Products</a>
             <ul class="dropdown">
               <li><a href="skyblue.html">Damage Skin Barrier/Dryness</a></li>
               <li><a href="Yellow.html">Dullness</a></li>
@@ -34,9 +37,26 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+
+      <!-- Right Side Icons -->
+      <div class="header-icons">
+        <!-- Search -->
+        <div class="search-box">
+          <input type="text" placeholder="Search..." />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Track Order -->
+        <a href="#" title="Track Order"><i class="fas fa-truck"></i></a>
+
+        <!-- Cart -->
+        <a href="#" title="Cart"><i class="fas fa-shopping-bag"></i></a>
+
+        <!-- Login -->
+        <a href="#" title="Login"><i class="fas fa-user"></i></a>
+      </div>
     </div>
   </header>
-
   <!-- Hero Section -->
   <section class="Hero">
     <img

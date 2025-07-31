@@ -1,51 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>eShop - Dot&Key</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eShop - Dot&Key</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="About.css" />
+  </head>
 
-<body>
-  <!-- Header -->
-  <header>
-    <div class="container head-container">
-      <div class="logo">
-        <img src="https://cdn-icons-png.flaticon.com/512/6688/6688704.png" alt="logo" />
-        <span class="logo-text">Dot & Key</span>
-         <button class="nav-toggle" id="navToggle">☰</button>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container head-container">
+        <div class="logo">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/6688/6688704.png"
+            alt="logo"
+          />
+          <span class="logo-text">Dot & Key</span>
+          <button class="nav-toggle" id="navToggle">☰</button>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li>
+              <a href="Products.html">Products</a>
+              <ul class="dropdown">
+                <li><a href="skyblue.html">Damage Skin Barrier/Dryness</a></li>
+                <li><a href="Yellow.html">Dullness</a></li>
+                <li><a href="Ageing.html">Makeup + skincare</a></li>
+                <li><a href="Darksport.html">Dark Spots</a></li>
+                <li><a href="Excessoil.html">Excess oil</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Add Right Side Icons Here -->
+        <div class="header-icons">
+          <!-- Search -->
+          <div class="search-box">
+            <input type="text" placeholder="Search..." />
+            <button><i class="fas fa-search"></i></button>
+          </div>
+
+          <!-- Track Order -->
+          <a href="#" title="Track Order"><i class="fas fa-truck"></i></a>
+
+          <!-- Cart -->
+          <a href="#" title="Cart"><i class="fas fa-shopping-bag"></i></a>
+
+          <!-- Login -->
+          <a href="#" title="Login"><i class="fas fa-user"></i></a>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li>
-            <a href="#">Products</a>
-            <ul class="dropdown">
-              <li><a href="skyblue.html">Damage Skin Barrier/Dryness</a></li>
-              <li><a href="Yellow.html">Dullness</a></li>
-              <li><a href="Ageing.html">Makeup + skincare</a></li>
-              <li><a href="Darksport.html">Dark Spots</a></li>
-              <li><a href="Excessoil.html">Excess oil</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="Hero">
-    <img
-      id="slider"
-      src="https://www.dotandkey.com/cdn/shop/collections/combo-Desktop.jpg?v=1752607905"
-      alt="Hero Image" />
-  </section>
+    <!-- Hero Section -->
+    <section class="Hero">
+      <img
+        id="slider"
+        src="https://www.dotandkey.com/cdn/shop/collections/combo-Desktop.jpg?v=1752607905"
+        alt="Hero Image"
+      />
+    </section>
 
-  <!-- Products Section -->
-  <!-- <section class="feature-products">
+    <section class="about-section">
+      <h1>Dot & Key</h1>
+      <p>
+        <b
+          >Dot & Key is a modern skincare brand committed to crafting safe,
+          effective, and sensorial skincare solutions.</b
+        >
+        With a science-backed approach, the brand offers dermatologically tested
+        products that target real skin concerns. From hydration to brightening,
+        their wide range of serums, moisturizers, and sunscreens is tailored for
+        all skin types. Dot & Key is known for using clean ingredients, free
+        from parabens, sulfates, and harmful chemicals. Their mission is to help
+        you achieve healthy, glowing skin through simple and thoughtful
+        routines. Loved by skincare enthusiasts, Dot & Key continues to innovate
+        with dermatologist-approved formulas. Experience the perfect blend of
+        nature and science with every Dot & Key product!
+      </p>
+      <br />
+      <p>
+        Our mission is to build a sneaker culture that’s authentic, inclusive,
+        and exciting. Join the community, stay trendy, and walk with confidence.
+      </p>
+    </section>
+    <section class="Team">
+      <h2>Meet our team</h2>
+      <div class="team-members">
+        <div class="members">
+          <img src="https://media.licdn.com/dms/image/v2/C5603AQEcAIFcFdqKpQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1635482490490?e=2147483647&v=beta&t=mN6Bnpu5cQ1u2E86y9FPtNd0uImq0uddp_T19SU7zwU" alt="anisha " />
+          <h3>Anisha Agarwal Saraf </h3>
+          <p>Co‑Founder & Chief Innovations Officer</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/feed/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="members">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOfM02y6rgVBxkic4X0PWOJLpLL5nxBS8Chq7fDwphpvC49npX7GMil4BEz6cOaQon1eY&usqp=CAU" alt="ceo" />
+          <h3>Suyash Saraf</h3>
+          <p>Co‑Founder & CEO,</p>
+          <div class="social-icons">
+            <a href="https://www.google.com/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="members">
+          <img src="images/pic-1.avif" alt="kartik" />
+          <h3>K. A.</h3>
+          <p>Chief of Staff, Strategy & Founders’ Office</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="members">
+          <img src="images/women1.avif" alt="sneha" />
+          <h3>A. B.</h3>
+          <p>Vice President Brand Development</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <!-- <section class="feature-products">
     <div class="container">
       <h2>Featured Products</h2>
       <div class="products-row">
@@ -88,38 +189,35 @@
     </div>
   </section> -->
 
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-container">
-      <p>&copy; 2025 eShop. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-container">
+        <p>&copy; 2025 eShop. All rights reserved.</p>
+      </div>
+    </footer>
 
-  <!-- Image Slider Script -->
-  <script>
-    const slider = document.getElementById("slider");
-    const images = [
-      "https://www.dotandkey.com/cdn/shop/collections/By-catagory-7.png?v=1740649969",
-      "https://www.dotandkey.com/cdn/shop/collections/By-catagory-3_f79fa38c-e530-43b6-9ff9-b154af6ae8b7.webp?v=1750929920",
-      "https://www.dotandkey.com/cdn/shop/collections/By-catagory-6.png?v=1740649993",
-      "https://www.dotandkey.com/cdn/shop/collections/By-catagory-11.png?v=1740649898",
-      "https://www.dotandkey.com/cdn/shop/collections/straw_desk.jpg?v=1751435089"
-    ];
-    let i = 0;
-    setInterval(() => {
-      i = (i + 1) % images.length;
-      slider.src = images[i];
-    }, 3000);
+    <!-- Image Slider Script -->
+    <script>
+      const slider = document.getElementById("slider");
+      const images = [
+        "images/banner1.webp",
+        "images/banner2.webp",
+        "images/banner3.webp",
+        "images/banner4.webp",
+        "images/banner5.webp",
+      ];
+      let i = 0;
+      setInterval(() => {
+        i = (i + 1) % images.length;
+        slider.src = images[i];
+      }, 3000);
 
+      const navToggle = document.getElementById("navToggle");
+      const navList = document.querySelector("nav ul");
 
-   
-  const navToggle = document.getElementById('navToggle');
-  const navList = document.querySelector('nav ul');
-
-  navToggle.addEventListener('click', () => {
-    navList.classList.toggle('active');
-  });
-
-  </script>
-</body>
+      navToggle.addEventListener("click", () => {
+        navList.classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>
